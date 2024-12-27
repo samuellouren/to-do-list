@@ -1,0 +1,98 @@
+body{
+    background-color: black;
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+.content--add-item{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+#input-new-task,
+#btn-new-task{
+    border: none;
+    font-size: 1rem;
+    outline: none;
+    padding: 1rem;
+}
+#input-new-task{
+    width: 20rem;
+    border-radius: 1rem;
+}
+#btn-new-task{
+    background-color: rgb(34, 40, 49);
+    color: aliceblue;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    transition: .3s;
+}
+#btn-new-task:hover{
+    background-color: rgb(49, 54, 63);
+}
+#to-do-list li{
+    list-style-type: none;
+    font-size: 1.4rem;
+    text-transform: capitalize;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#to-do-list li:hover{
+    background-color: var(--color-dark3);
+    transition: .4s;
+    border-radius: 1rem;
+    padding-left: 1rem;
+}
+#btn-ok{
+    border: none;
+    background-color: rgb(92, 179, 56);
+    color: aliceblue;
+    padding: .4rem .8rem;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: .3s;
+}
+#btn-ok:hover{
+    background-color: rgb(72, 173, 82);
+}
+#btn-trash{
+    border: none;
+    background-color: rgb(205, 24, 24);
+    color: aliceblue;
+    padding: .4rem .8rem;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: .3s;
+}
+#btn-trash:hover{
+    background-color: rgb(241, 90, 89);
+}
+.done {
+    text-decoration: line-through;
+    color: rgb(72, 173, 82);
+    transition: 0.5s ease;
+}
